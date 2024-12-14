@@ -1,0 +1,327 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(21, 18, 18);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 90px;
+}
+
+.Logo {
+    text-decoration: none;
+    color: rgb(186, 186, 202);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.Logo:hover {
+    color: rgb(69, 66, 66);
+}
+
+.Navigation a {
+    text-decoration: none;
+    color: rgb(165, 165, 175);
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.Navigation a:hover {
+    color: rgb(233, 233, 233);
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../img/NewImg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: rgb(254, 254, 254);
+    font-size: 2.9em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    text-align: center;
+    color: rgb(191, 207, 207);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.social-icon a {
+    font-size: large;
+    color: rgb(77, 101, 121);
+    margin: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(137, 142, 119);
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+.contint {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    width: 21.1em;
+    box-shadow: 0 5px 30px rgba(88, 85, 85, 0.15);
+    border-radius: 25px;
+    padding: 26px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: rgb(51, 50, 54);
+    font-size: 3em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    color: rgb(35, 68, 90);
+}
+
+.info h3 {
+    color: rgb(21, 18, 18);
+    font-size: 2.3em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.project {
+    background-color: rgb(254, 254, 254);
+}
+
+.project .contint {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(205, 194, 183);
+    min-height: 10em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-img img {
+
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-catogry {
+    font-size: 0.8em;
+    color: #ffffff;
+}
+
+.project-titil {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more {
+    text-decoration: none;
+    color: rgb(83, 74, 74);
+}
+
+.more:hover {
+    color: aqua;
+}
+
+.project-titil1 {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer {
+    background-color: rgb(21, 18, 18);
+    color: antiquewhite;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size: 1.3em;
+}
+
+.footer p samp {
+    color: rgb(125, 118, 118);
+}
+
+.social-icon2 a {
+    font-size: large;
+    color: aliceblue;
+    margin: 20px;
+}
+
+/* Media Queries */
+/* لابتوب */
+@media (max-width: 1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .Navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .contint {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    .project-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* تابلت */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .main h2 {
+        font-size: 1.5em;
+    }
+
+    .main h3 {
+        font-size: 1.8em;
+    }
+
+    .card,
+    .project-card {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+/* تلفونات */
+@media (max-width: 480px) {
+    body {
+        font-size: 10px;
+    }
+
+    .main h2 {
+        font-size: 1.2em;
+    }
+
+    .main h3 {
+        font-size: 1.5em;
+    }
+
+    .card,
+    .project-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .Navigation a {
+        font-size: 0.9em;
+    }
+}
